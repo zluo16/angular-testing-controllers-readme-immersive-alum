@@ -117,6 +117,8 @@ This will install the Karma command line interface tool, so we can run tests usi
 
 We also need a copy of Karma for our project, as well as Jasmine too.
 
+Karma command line interface starts up the karma server for us, and the local copy for our project allows us to access the API's that karma offers.
+
 ```bash
 npm install karma --save-dev
 npm install jasmine-core --save-dev
@@ -127,6 +129,8 @@ npm install karma-jasmine --save-dev
 Sorted! Run `karma start` on your command line to see it run (and pass!) our basic test (expecting `'foo'` to equal `'foo'`).
 
 ## ngMock - ngWhat?
+
+When we test our code, we need to be able to get deep inside it and see what everything is doing. However, in normal day-to-day coding, we cannot do that - that's where ngMock saves the day.
 
 ngMock is a module that Angular provides us to embed into our tests in order to inject and mock our controllers, directives etc into our tests. ngMock also extends some core services that Angular provides, in order for us to inspect them and control them differently to how they would run in the browser.
 
