@@ -124,6 +124,7 @@ npm install karma --save-dev
 npm install jasmine-core --save-dev
 npm install karma-spec-reporter --save-dev
 npm install karma-jasmine --save-dev
+npm install karma-chrome-launcher --save-dev
 ```
 
 Sorted! Run `karma start` on your command line to see it run (and pass!) our basic test (expecting `'foo'` to equal `'foo'`).
@@ -194,3 +195,4 @@ describe('MainController', function() {
 If we run `karma start` now, you'll notice our test fails. Go into the `MainController.js` file inside `js/app/controllers` and see if you can figure out why, and see if you can get our unit test to pass!
 
 You'll notice we pass through our own $scope - this is to allow us to read what `$scope` would be equal to inside the controller. If our controller adjusts `$scope`, we can test the properties on our own `$scope` inside our tests.
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-testing-controllers-readme'>Testing Controllers </a> on Learn.co and start learning to code for free.</p>
